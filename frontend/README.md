@@ -190,6 +190,23 @@ You can deploy the `build` folder to any static hosting service, such as:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 📬 Contact
+
+For suggestions, feedback, or contributions, please feel free to reach out through the following channels:
+
+- **GitHub Issues**: [Open an Issue](https://github.com/AhmadNader319/EGP-Converter/issues)
+- **Pull Requests**: [Submit a PR](https://github.com/AhmadNader319/EGP-Converter/pulls)
+- **Email**: [Your Email Address]
+
+We welcome all contributions and feedback to help improve the Currency Exchange Frontend!
+
+## 📬 Contact
+
+For suggestions, feedback, or contributions, please visit the project repository:
+[EGP-Converter-FrontEnd on GitHub](https://github.com/KhaledMeow/EGP-Converter-Feat-FrontEnd)
+
+Or contact the maintainer: [KhaledMeow](https://github.com/KhaledMeow)
+
 ## 🙏 Acknowledgments
 
 - [React](https://reactjs.org/)
