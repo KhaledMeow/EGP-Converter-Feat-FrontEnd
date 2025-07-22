@@ -1,6 +1,6 @@
 const React = require('react');
 const { useState, useEffect, useCallback } = React;
-const api = require('../../services/api');
+const api = require('../services/api');
 const { format, subMonths } = require('date-fns');
 require('../styles/historical.css');
 

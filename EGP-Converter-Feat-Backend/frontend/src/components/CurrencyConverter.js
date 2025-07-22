@@ -1,6 +1,6 @@
 const React = require('react');
 const { useState } = React;
-const api = require('../../services/api');
+const api = require('../services/api');
 require('../styles/converter.css');
 
 function CurrencyConverter() {
