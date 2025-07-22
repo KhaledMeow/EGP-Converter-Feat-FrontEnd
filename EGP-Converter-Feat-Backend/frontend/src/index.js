@@ -1,36 +1,36 @@
-'use strict';
-
-const React = require('react');
-const ReactDOM = require('react-dom/client');
-const Header = require('./components/Header').default;
-const CurrencyConverter = require('./components/CurrencyConverter').default;
-const ExchangeRates = require('./components/ExchangeRates').default;
-const HistoricalData = require('./components/HistoricalData').default;
-
-require('./styles/main.css');
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import Header from './components/Header';
+import CurrencyConverter from './components/CurrencyConverter';
+import ExchangeRates from './components/ExchangeRates';
+import HistoricalData from './components/HistoricalData';
+import './styles/main.css';
 
 function App() {
-  return React.createElement('div', { className: 'app' },
-    React.createElement(Header, null),
-    React.createElement('main', { className: 'main-content' },
-      React.createElement('div', { className: 'container' },
-        React.createElement('div', { className: 'row' },
-          React.createElement('div', { className: 'col-md-6' },
-            React.createElement(CurrencyConverter, null)
-          ),
-          React.createElement('div', { className: 'col-md-6' },
-            React.createElement(ExchangeRates, null)
-          )
-        ),
-        React.createElement('div', { className: 'row mt-4' },
-          React.createElement('div', { className: 'col-12' },
-            React.createElement(HistoricalData, null)
-          )
-        )
-      )
-    )
+  return (
+    <div className="app">
+      <Header />
+      <main className="main-content">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <CurrencyConverter />
+            </div>
+            <div className="col-md-6">
+              <ExchangeRates />
+            </div>
+          </div>
+          <div className="row mt-4">
+            <div className="col-12">
+              <HistoricalData />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(React.createElement(App));
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App />);

@@ -1,7 +1,6 @@
-const React = require('react');
-const { useState, useEffect, useCallback } = React;
-const api = require('../services/api');
-require('../styles/rates.css');
+import React, { useState, useEffect, useCallback } from 'react';
+import api from '../services/api';
+import '../styles/rates.css';
 
 function ExchangeRates() {
   const [baseCurrency, setBaseCurrency] = useState('EUR');
@@ -94,4 +93,4 @@ function ExchangeRates() {
   );
 }
 
-module.exports = { default: ExchangeRates };
+export default ExchangeRates;

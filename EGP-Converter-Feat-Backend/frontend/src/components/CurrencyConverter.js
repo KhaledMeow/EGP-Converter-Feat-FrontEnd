@@ -1,7 +1,6 @@
-const React = require('react');
-const { useState } = React;
-const api = require('../services/api');
-require('../styles/converter.css');
+import React, { useState } from 'react';
+import api from '../services/api';
+import '../styles/converter.css';
 
 function CurrencyConverter() {
   const [amount, setAmount] = useState('1');
@@ -130,4 +129,4 @@ function CurrencyConverter() {
   );
 }
 
-module.exports = { default: CurrencyConverter };
+export default CurrencyConverter;

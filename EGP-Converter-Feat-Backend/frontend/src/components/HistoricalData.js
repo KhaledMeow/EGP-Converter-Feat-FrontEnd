@@ -1,8 +1,7 @@
-const React = require('react');
-const { useState, useEffect, useCallback } = React;
-const api = require('../services/api');
-const { format, subMonths } = require('date-fns');
-require('../styles/historical.css');
+import React, { useState, useEffect, useCallback } from 'react';
+import { format, subMonths } from 'date-fns';
+import api from '../services/api';
+import '../styles/historical.css';
 
 function HistoricalData() {
   const [date, setDate] = useState(format(subMonths(new Date(), 1), 'yyyy-MM-dd'));
@@ -242,4 +241,4 @@ function HistoricalData() {
   );
 }
 
-module.exports = { default: HistoricalData };
+export default HistoricalData;

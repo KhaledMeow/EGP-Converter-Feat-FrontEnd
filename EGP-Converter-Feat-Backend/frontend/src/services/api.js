@@ -1,5 +1,5 @@
-const axios = require('axios');
-const { API_BASE_URL } = require('../config');
+import axios from 'axios';
+import { API_BASE_URL } from '../config';
 
 // Create axios instance with base URL
 const apiInstance = axios.create({
@@ -157,4 +157,4 @@ const api = {
   }
 };
 
-module.exports = api;
+export default api;

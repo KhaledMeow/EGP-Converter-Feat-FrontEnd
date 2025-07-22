@@ -1,21 +1,21 @@
-'use strict';
-
-const React = require('react');
-require('../styles/header.css');
+import React from 'react';
+import '../styles/header.css';
 
 function Header() {
-  return React.createElement('header', { className: 'app-header' },
-    React.createElement('div', { className: 'container' },
-      React.createElement('div', { className: 'header-content' },
-        React.createElement('h1', { className: 'app-title' }, 'Currency Exchange Dashboard'),
-        React.createElement('div', { className: 'last-updated' },
-          React.createElement('i', { className: 'fas fa-sync-alt' }),
-          ' Last updated: ',
-          React.createElement('span', { id: 'last-updated-time' }, new Date().toLocaleTimeString())
-        )
-      )
-    )
+  return (
+    <header className="app-header">
+      <div className="container">
+        <div className="header-content">
+          <h1 className="app-title">Currency Exchange Dashboard</h1>
+          <div className="last-updated">
+            <i className="fas fa-sync-alt" />
+            {' Last updated: '}
+            <span id="last-updated-time">{new Date().toLocaleTimeString()}</span>
+          </div>
+        </div>
+      </div>
+    </header>
   );
 }
 
-module.exports = { default: Header };
+export default Header;
